@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelDream – Туры по всему миру | Горящие путёвки</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        /* Кастомные стили (опционально) */
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="bg-primary text-white py-3 shadow-sm">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="d-flex align-items-center mb-3 mb-md-0">
+                    <img src="img/laguna.jpg" alt="Логотип" width="40" class="me-2">
+                    <h1 class="h4 mb-0">Travel<span class="text-warning">Dream</span></h1>
+                </div>
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white active">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Туры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="mb-5">
+        <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"> <!-- Добавлен active -->
+                    <img src="img/landscape.jpg" class="d-block" style="width:50%" alt="Турция">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/laguna.jpg" class="d-block" style="width:50" alt="Тайланд">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mountains_lake.jpg" class="d-block" style="width:50%" alt="Италия">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Вперёд</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Карточки -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Популярные направления</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/turkey.jpg" "text=Турция" class="card-img-top" alt="Турция">
+                        <div class="card-body">
+                            <h5 class="card-title">Турция</h5>
+                            <p class="card-text text-muted">Анталия, Стамбул, пляжи и древние города.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">от 35 000 ₽</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/thailand.jpg" "text=Тайланд" class="card-img-top" alt="Тайланд">
+                        <div class="card-body">
+                            <h5 class="card-title">Тайланд</h5>
+                            <p class="card-text text-muted">Бангког, Паттайя, Пхукет пляжи и города.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">от 55 000 ₽</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="img/italy.jpg" "text=Италия" class="card-img-top" alt="Италия">
+                        <div class="card-body">
+                            <h5 class="card-title">Италия</h5>
+                            <p class="card-text text-muted">Рим, Венеция, Неаполь, Ватикан и дрyие города.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">от 65 000 ₽</span>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Контакты</h3>
+                    <p><i class="bi bi-telephone"></i> +7 (123) 456-78-90</p>
+                    <p><i class="bi bi-envelope"></i> info@traveldream.ru</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h3>Соцсети</h3>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
